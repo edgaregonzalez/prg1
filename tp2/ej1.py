@@ -11,16 +11,22 @@ d) Determinar si el contenido de una lista cualquiera es capicúa, sin usar list
 auxiliares.
 '''
 lista = []
-
+'''
+Carga un vector con numeros aleatorios
+'''
 def CargarVector():
     for i in range(random.randint(10,99)):
         lista.append(random.randint(1000,9999))
     return lista
-
+'''
+Recibe una lista como parametro y suma sus elementos
+'''
 def sumarLista(vector):
     return sum(vector)
 
-
+'''
+Eliminaun valor de la lista y devuelve la lista actualizada
+'''
 def eliminarValor( n, vector):
     for i in vector:
         if(i == n):
